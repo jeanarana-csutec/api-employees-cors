@@ -3,5 +3,5 @@ WORKDIR /programas/api-employees
 RUN pip3 install "fastapi[standard]"
 RUN pip3 install pydantic
 RUN pip3 install mysql-connector-python
-COPY . . //copia todo el codigo en la carpeta creada
+COPY . . 
 CMD ["fastapi", "run", "./main.py", "--port", "8000"] 
